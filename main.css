@@ -1,0 +1,39 @@
+/* Timothy Millers beginers css */
+/* i followed what the requirements stated for this one */
+
+body{
+     background-color: rgb(132, 30, 228);
+     color:aqua;
+
+}
+/* for this i read the requirements on the properties and values*/
+nav{
+    height: 6000px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+
+}
+header{
+    text-align: center;
+
+}
+h1{
+    text-align:center;
+}
+h2{
+    text-align:center;
+}
+h3{
+    text-align:center;
+}
+h4{
+    text-align:center;
+}
