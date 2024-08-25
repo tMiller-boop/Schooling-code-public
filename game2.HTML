@@ -1,0 +1,144 @@
+<!--Timothy Miller-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--I tied both game.css and code.js into this game in hopes to make a cool and easy to read-->
+    <link rel="stylesheet" href="game.css">
+    <!--linked both css and javascript -->
+    <link rel="stylesheet" href="code.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The title should be a self summery of the game-->
+    <title>cave</title>
+    <script src="code.js"></script>
+</head>
+<body>
+    <header> 
+        <!-- made sure to give the id an easy to follow name to use for java to identify onto java-->
+        <h1 id="start">
+            You wake up in a cave. what do you do? <br/>
+        <!--didnt know if i should change the id or the name of the buttons but the idea was connecting the buttons
+        to java and hide the next section of text that doesn't get selected threw button layout-->
+        
+        
+             <button name="a" id="a" onclick="question1('A')">A</button> Look for a light?<br/>
+             <button name="b" id="b" onclick="question1('B')">B</button> Look for a weapon?<br/>
+             <button name="c" id="c" onclick="question2('C')">C</button> Go back to sleep?<br/><br/></h1>
+        <!-- welcome to my trouble, so far in the javascript im having difficulty having this line of text show with button command-->
+        <h2 id="light&weapon" style="display: none;">
+            <!--after much time to figure out a story for my game i've come to the conclution that a cave escape was the funnest "not easiest" game 
+            to make because i had a retro text based game in mind but this was the closest i could get too given the perameters-->
+            You feel around on the ground but only feel rocks and the cold damp floor, You hear something move in the distance!<br/>
+            <!-- the fabled buttons again, they have been the highlight of the forfront to much of my difficulty as of late, but once i figure out 
+             the proper way of getting them to work things will go much more smoothly.-->
+       
+       
+       
+             <button name="d" id="d" onclick="question5('D')">A</button> Do you investigate the sound?<br/>
+             <button name="e" id="e" onclick="question2('E')">B</button> sleep?<br/>
+             <button name="f" id="f" onclick="question5('F')">C</button> Wonder around aimlessly?<br/>    
+        </h2><br/><br/>
+        
+        <!--this is the breaking poing of the original story, the concept was having the extra text being hidden so at "start" if they chose either
+        (A) or (B) the "light&weapon" text would appear while the "sleep" text would remain hidden, since that choice is no longer available all choices
+        based off it will also be gone. at least thats the overall plan for it.-->
+        <h3 id="sleep" style="display: none;">
+            <!--because this was originally going to be a first attempt at a text based game i wanted to have fun with the text and make it 
+            more of my humor-->
+            you try to make yourself comfortable on the COLD and DAMP floor! You even grab the biggest, softest looking ROCK <br>
+        to rest your dreary head upon to get a little nappy time in.<br/>
+        <br/><!--see i pay attention. using the br/ to seperate the sentances and giving the letters some space in between-->
+        As you begin to get comfortable the sounds around you begin to get louder!<br/>
+        "rocks falling in the distance"<br/>
+         <!--another choice base where i made the slight notion to look for a light source or weapon
+          that most survival based games make you look for or craft-->                                                                           
+        
+        
+          <button name="g" id="g" onclick="question5('G')">A</button> Do you investigate the sound?<br/>
+          <button name="h" id="h" onclick="question3('H')">B</button> Do you look for light or a weapon?<br/>
+          <button name="i" id="i" onclick="question5('I')">C</button> Wonder around aimlessly?<br/></div>
+    </h3><br/><br/>
+    <!--YES!! this is my favorate section in this game, the choice you make for your rock! 
+    is it a pointless task...yes
+    is it important to the main game... no
+    is it a fun and creative way you use code to generate the name you choose to be incorperated in the text [name] in the next section...
+    well if i can get it to work then...yes-->
+        <h4 id="rock" style="display: none;"> 
+            <!--honestly i thought this was the funnest string-->
+            You look around and found more wet rocks.<br/>
+                You decided to name one. Why? I don't know? As it stated<br/>
+                 "You decided to name one." So what is its name:<br/>
+                 <!-- i loved the name ideas. i chose wilson because of castaway, teddy because alot of horror games have a teddy bear
+                  and nothing because either way its getting a name even if you name it nothing-->
+                
+                
+                <button name="j" id="j" onclick="question4('J')">A</button> Wilson<br/>
+                <button name="k" id="k" onclick="question4('K')">B</button> Teddy<br/>
+                <button name="l" id="l" onclick="question4('L')">C</button> Nothing<br/><br/>
+                </h4>
+                <!--as you see, i have a plan on incorperating text eventually!! to replace the sections [name] with the choices above-->
+        <h5 id="name" style="display: none;"> 
+            After carefully carving [name] into the rock you place [name] in your pocket<br/>
+        rassuring [name] that you'll get it out safely, you love [name] and wish to save [name]. you begin<br/>
+        investigate the sound now that you have to save [name]."working progress on name placement."<br/><br/><br/>
+        <!--in truth that was just a minigame i wanted to add in because i thought it was a truly fun idea-->
+        
+        
+        <button name="m" id="m" onclick="question5('M')">A</button> investigate sound?<br/>
+                 </h5><br/><br/>
+                 <!-- to give a good idea of the areas i thought cave-in was the best choice-->
+        <h6 id="cave-in" style="display: none;">
+            Your investigation of the sound brought you to a cave-in.<br/>
+            you look closely and see a faint light coming from behind the rocks<br/>
+            you feel a cool breeze:<br/>
+            <!--i enjoyed making the button layouts if im honest. learning where to place them-->
+        
+        
+            <button name="n" id="n" onclick="question7('N')">A</button> Pull rocks willy nilly?<br/>
+            <button name="o" id="o" onclick="question6('O')">B</button> Yell for help?<br/>
+            <button name="p" id="p" onclick="question7('P')">C</button> Gently roll loose rocks first?<br/>
+
+        </h6>    <br/><br/>   
+        <!--needed a fear element, even when you know your alone there is always that fear that your not. quoting "outside" was the easiest and 
+        most subtle way to incorperate that element in the game-->
+        <h7 id="yell" style="display: none;">
+            You yell as loud as you can asking for help! Nobody "outside" heard you...<br/>
+        
+        
+            <button name="q" id="q" onclick="question7('Q')">A</button> Pull rocks willy nilly?<br/>
+            <button name="r" id="r" onclick="question7('R')">B</button> Gently roll loose rocks first?<br/>
+        </h7><br/><br/>
+        <!--the hole in my opinion was fun but underwhelming ending. i mean you can select crawl out or wiggle like an inch-worm. 
+        but then what. you get the same ending-->
+        <h8 id="hole" style="display: none;"> 
+            You manage to get a bunch of rocks out of a corner of the cave-in enterance,<br/>
+            It looks like enough room to crawl out!<br/>
+            
+            
+            <button name="s" id="s" onclick="question8('S')">A</button> Crawl out!<br/>
+            <button name="t" id="t" onclick="question8('T')">B</button> Wiggle out like an inch-worm?<br/>
+            <button name="u" id="u" onclick="question9('U')">C</button> Accept your fate and claim the cave as home.<br/>
+            </h8><br/><br/>
+            <!--Boring ending-->
+        <h9 id="escape" style="display: none;">
+            You escaped the cave! Congratulations you were able to escape!<br/>
+            <br/>
+            <br/>
+        </h9>
+        <!--the ending i want-->
+        <h10 id="home" style="display: none;">
+            You cleared the rest of the cave-in as well as went to the store near by<br/>
+            and bought alot of cleaning equipment, generator, lumber, power tools,and invested<br/>
+            your life savings into the cave. it looks really nice now.<br/>
+            You even built a shelf where you have now named many other rocks<br/>
+            You are now at peace in the cave... For now.<br/>
+            <br/>
+            <!--see an amazing ending, the ending all champions go for, and the ending i will allways go for!-->
+        </h10>
+        <h11 id="the end">
+            Thank you for playing my game!
+            <!--thank you for reading all the comments, i did put effort into notating all issues im having-->
+        </h11>
+    </header>
+</body>
+</html>

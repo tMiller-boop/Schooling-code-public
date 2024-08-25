@@ -1,0 +1,48 @@
+/*Timothy Miller*/
+/*making sure to change the body style black so it looks more like a text base adventure*/
+body{
+    background-color: black;
+    
+
+}
+/*changing the color of the text to yellow to make it easier on the eyes to read,
+making it appear gold or yellow will pop the text and be way easier on eye comfort
+changing the font size to X-Large will also be easier on the eyes*/
+header{
+    color: gold;
+    position: center;
+    font-size: x-large;
+}
+h1{
+    font-size: x-large;
+}
+h2{
+    font-size: x-large;
+}
+h3{
+    font-size: x-large;
+}
+h4{
+    font-size: x-large;
+}
+h5{
+    font-size: x-large;
+}
+h6{
+    font-size: x-large;
+}
+h7{
+    font-size: x-large;
+}
+h8{
+    font-size: x-large;
+}
+h9{
+    font-size: x-large;
+}
+h10{
+    font-size: x-large;
+}
+h11{
+    font-size: x-large;
+}
