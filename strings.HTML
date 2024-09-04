@@ -1,0 +1,48 @@
+<!--Timothy Miller-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title of the page-->
+    <title>Palindrome!!</title>
+    <script>
+        //this is where javascript ties into HTML
+      function palindrome(str){
+             //const clean string equaling to string subject to lowercase lettering while
+             //replacing uppercase lettering with lowercase and removing 0-9 numbering globally
+             //removing blank spaces
+            const cleanStr = str. toLowerCase() .replace(/[^a-z0-9]/g,'');
+            //when you have an item to return value back in your function you can use 
+            // [return] to return the result your seeking. you have to have (3) (=) signs
+            // so i set my return clean string is 3X= to my constant clean string by splitting
+            // the blank spaces reversing everything then joining the spaces together
+            return cleanStr === cleanStr. split('').reverse().join(''); 
+        }//now onto strings starting with constant strings, in functions under [const] 
+        // our constant input string is going to be a racecar spelled wacky and with numbers
+        const inputString ="racecar"
+        // now if only the palindrome input strings were true and in fact a palindrome it will pass
+        if(palindrome(inputString)){
+            //if it were true your results: (this is a palindrome) will pop up from alert box at the top
+            alert (inputString + "  this is a Palindrome")
+     // well its else so if racecar were not a palindrome and lats say miami were in its place...
+     }else{
+        //else if not palindrome: ( this is not a palindrome) 
+        alert(inputString + "   this is not a Palindrome")
+     }
+    </script>
+</head>
+<body>
+    <!--main title of the game-->
+    <header>Palindrome Check</header>
+    <h1><!--and back to HTML this was when i was overthinking this and was building a webpage based on looking up palindrome's-->
+        <div class="topnav">
+            <!--i didnt wanna delete it because i still had it in mind if a project with simular properties appear in the future-->
+            <a class="active" href="#home">Home</a>
+            <!--i also had a css that was tied to this html-->
+            <input type="text" placeholder="search...">
+
+    </div></h1>
+    
+</body>
+</html>
